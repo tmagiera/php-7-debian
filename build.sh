@@ -18,6 +18,7 @@ sudo apt-get install -y \
     libltdl-dev \
     libjpeg-dev \
     libpng-dev \
+    libhiredis-dev \
     libpspell-dev \
     libreadline-dev
 
@@ -51,6 +52,7 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-mysql-sock=/var/run/mysqld/mysqld.sock \
                   --with-mysqli=mysqlnd \
                   --with-pdo-mysql=mysqlnd \
+                  --with-redis \
                   --with-openssl \
                   --enable-pcntl \
                   --with-pspell \
